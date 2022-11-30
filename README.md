@@ -1,6 +1,6 @@
 # PyMemAI
 
-A basic tool for creating and appending mems to your personal mem.ai account.
+A basic tool for creating and appending mems to your personal [mem.ai](https://mem.ai) account.
 
 ## Get Started
 
@@ -14,6 +14,7 @@ from pymemai import MemAPI
 
 pymem = MemAPI("<INSERT API KEY>")
 
+# The text you want to put into Mem, including using their Mem Markdown
 content = """# My first Mem with PyMem!
 #PyMem #Python
 Here is some text"""
@@ -38,9 +39,9 @@ You can view your created/appended mem by going to the url provided.
 
 ## FAQ
 
-Help! My mem keeps putting everything in a code block!
-- Make sure you don't have any unintential spaces when doing a multy line string.
-```
+*Help! My mem keeps putting everything in a code block!*
+- Make sure you don't have any unintential spaces when doing a multi line string.
+```python
 # Good
 content = """# Title
 #Tags
