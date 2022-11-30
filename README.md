@@ -38,15 +38,18 @@ You can view your created/appended mem by going to the url provided.
 
 ## Usage
 
-`MemAPI(apiKey: str)`
+1. `MemAPI(apiKey: str)`
+
 Intialize Object and add our API Key to the header
 
-`createMem(content: str, isRead=False, isArchived=False) -> (memID: str, memURL: str)`
+2. `createMem(content: str, isRead=False, isArchived=False) -> (memID: str, memURL: str)`
+
 Sends a `POST` request to mem.ai to create a mem with `content` as the data. If the request does not return a 200 status, `memID` and `memURL` will be empty strings. Additionally, `MemAPI.errorMsg` will contain the error mem.ai returned and `MemAPI.statusCode` will hold the HTTP code.
 
 Additionally, if the request was successful, it appends the `memID` to the newly created mem for later use.
 
-`def appendToMem(self, memId: str, content: str) -> (memID: str, memURL: str)`
+3. `def appendToMem(self, memId: str, content: str) -> (memID: str, memURL: str)`
+
 Sends a `POST` request to mem.ai to append to mem with id `memID`. If the request does not return a 200 status, `memID` and `memURL` will be empty strings. Additionally, `MemAPI.errorMsg` will contain the error mem.ai returned and `MemAPI.statusCode` will hold the HTTP code.
 
 ## Limitations
