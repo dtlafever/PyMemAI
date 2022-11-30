@@ -74,3 +74,7 @@ content = """# Title
     #Tags
     Text"""
 ```
+
+## Future Work
+
+Make a VS Code extension to make saving code snippets to Mem.ai easier!
