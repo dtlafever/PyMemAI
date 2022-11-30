@@ -28,6 +28,12 @@ else:
     print(pymem.errorMsg)
 ```
 
+Example Output
+```
+MemID: 10000000-0000-0000-0000-00000000000
+MemURL: https://mem.ai/m/XXXXXXXX
+```
+
 You can view your created/appended mem by going to the url provided.
 
 ## Limitations
